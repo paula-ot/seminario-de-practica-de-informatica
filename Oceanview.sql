@@ -156,7 +156,7 @@ INSERT INTO Alerta (tipoAnomalia, fechaHoraGeneracion, nivelGravedad, idEvento) 
 
 -- CONSULTAS DE PRUEBA
 /*
-Consulta 1
+-- Consulta 1
 
 SELECT
 p.idPersona AS ID,
@@ -174,13 +174,12 @@ LEFT JOIN Usuario u ON p.idPersona = u.idPersona
 ;
 
 
-Consulta 2
+-- Consulta 2
 
 SELECT
 a.nombreArea AS Area,
 a.nivelRestriccion AS Restriccion,
 c.codigoLector AS Lector_Instalado,
-34
 t.codigoUID AS UID_Tarjeta,
 t.estado AS Estado_Tarjeta,
 pm.fechaInicio AS Validez_Desde,
@@ -193,7 +192,7 @@ INNER JOIN Tarjeta t ON pm.idPersona = t.idPersona
 ;
 
 
-Consulta 3
+-- Consulta 3
 
 SELECT
 arl.nombreArchivo AS Archivo_Origen,
@@ -205,6 +204,5 @@ FROM ArchivoLog arl
 INNER JOIN Evento e ON arl.idArchivoLog = e.idArchivoLog
 LEFT JOIN Alerta al ON e.idEvento = al.idEvento
 ;
-
 
 */
